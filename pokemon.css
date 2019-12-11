@@ -1,3 +1,14 @@
+body{
+  background-color: white;
+  
+}
+.logoImage{
+  height: 200px;
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -6,7 +17,15 @@ main{
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: pink;
 }
+h1{
+  color: palevioletred;
+  font-size: 70px;
+  text-align: center;
+}
+
 .picDivs{
     width: 100%;
 }
@@ -48,14 +67,21 @@ main{
     font-weight: bold;
     font-size: 40px;
     backface-visibility: hidden;
+    padding: 10px;
   }
   
   .card__face--front {
-    background: rgb(177, 110, 110);
+    background: palevioletred;
+    border: 1px solid palevioletred;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
   }
   
   .card__face--back {
-    background: rgb(108, 108, 145);
+    background-image: linear-gradient(red,orange,yellow,green,blue,indigo,violet);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
     transform: rotateY(180deg);
   }
 
@@ -71,6 +97,6 @@ main{
   #newPokemon{
     width: 140px;
     height: 100px;
-    background-color: rgb(7, 121, 197);
+    background-color: palevioletred;
     font-size: 1.5rem;
   }
